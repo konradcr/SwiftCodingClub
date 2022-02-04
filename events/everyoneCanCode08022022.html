@@ -9,12 +9,15 @@
           rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
           crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
     <!-- My CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img src="../assets/img/svg/swift_logo_color.svg" alt="Logo Swift" width="30" height="30"
@@ -41,6 +44,7 @@
             </div>
         </div>
     </nav>
+    <!-- Breadcrumb -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">Accueil</li>
@@ -67,15 +71,21 @@
         <button type="button">Je participe !</button>
     </article>
 </main>
-<footer>
-    <a href="#">Mentions légales</a>
-    <span>© 2022 Swift Coding Club de Bourgogne</span>
-    <ul>
-        <li><a href="#"><img src="../assets/img/svg/facebook.svg" alt="Logo Facebook"></a></li>
-        <li><a href="#"><img src="../assets/img/svg/instagram.svg" alt="Logo Instagram"></a></li>
-        <li><a href="#"><img src="../assets/img/svg/twitter.svg" alt="Logo Twitter"></a></li>
-        <li><a href="#"><img src="../assets/img/svg/github.svg" alt="Logo GitHub"></a></li>
-    </ul>
+<!-- Footer -->
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-facebook" role="img" aria-label="Facebook"></i></a></li>
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-instagram" role="img" aria-label="Instagram"></i></a></li>
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-twitter" role="img" aria-label="Twitter"></i></a></li>
+            <li class="ms-3"><a href="#" class="text-muted"><i class="bi bi-github" role="img" aria-label="GitHub"></i></a></li>
+        </ul>
+
+        <div class="text-center py-2">
+            <span class="text-muted">© 2022 Swift Coding Club de Bourgogne</span><br>
+            <a href="#" class="text-muted pt-1">Mentions légales</a>
+        </div>
+    </div>
 </footer>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
