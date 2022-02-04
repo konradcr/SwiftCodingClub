@@ -14,21 +14,31 @@
 </head>
 <body>
 <header>
-    <nav>
-        <div>
-            <a href="../index.html">
-                <img src="/assets/img/svg/swift_logo_color.svg" alt="Logo Swift">
-                Swift Coding Club de Bourgogne
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/svg/swift_logo_color.svg" alt="Logo Swift" width="30" height="30"
+                     class="d-inline-block">
+                Swift Coding Club
             </a>
-            <ul>
-                <li><a href="../index.html">Qui sommes-nous ?</a></li>
-                <li><a href="#">Nos projets</a></li>
-                <li><a href="events.html">Nos événements</a></li>
-            </ul>
-            <form>
-                <input type="search" placeholder="Rechercher..." aria-label="Rechercher">
-                <button type="button">Rejoins-nous !</button>
-            </form>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbar"
+                    aria-controls="navbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Qui sommes-nous ?</a></li>
+                    <li class="nav-item"><a href="events.html" aria-current="page" class="nav-link active">Nos événements</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled">Nos projets</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link disabled">Rejoins-nous !</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Rechercher">
+                    <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                </form>
+            </div>
         </div>
     </nav>
     <nav>
@@ -44,7 +54,7 @@
         <p>Retrouvez-ici l'ensemble de nos événements et ateliers organisés !</p>
     </section>
     <article>
-        <img src="/assets/img/everyone_can_code.jpg" alt="Image atelier code">
+        <img src="../assets/img/everyone_can_code.jpg" alt="Image atelier code">
         <div>
             <h3>Atelier <em>Everyone Can Code</em></h3>
             <p>Rejoignez-nous tous les mardis pour cet atelier d'initiation au code
@@ -56,7 +66,7 @@
         </div>
     </article>
     <article>
-        <img src="/assets/img/hackathon.jpg" alt="Image événement Hackathon">
+        <img src="../assets/img/hackathon.jpg" alt="Image événement Hackathon">
         <div>
             <h3>Hackathon</h3>
             <p>Venez seuls ou en groupe afin de participer à ce premier Hackathon et
@@ -68,7 +78,7 @@
         </div>
     </article>
     <article>
-        <img src="/assets/img/arduino.jpg" alt="Image événement Arduino">
+        <img src="../assets/img/arduino.jpg" alt="Image événement Arduino">
         <div>
             <h3>Initiation à Arduino</h3>
             <p>Que vous soyez novice ou expérimenté, nous vous proposons de venir découvrir
@@ -84,10 +94,10 @@
     <a href="#">Mentions légales</a>
     <span>© 2022 Swift Coding Club de Bourgogne</span>
     <ul>
-        <li><a href="#"><img src="/assets/img/svg/facebook.svg" alt="Logo Facebook"></a></li>
-        <li><a href="#"><img src="/assets/img/svg/instagram.svg" alt="Logo Instagram"></a></li>
-        <li><a href="#"><img src="/assets/img/svg/twitter.svg" alt="Logo Twitter"></a></li>
-        <li><a href="#"><img src="/assets/img/svg/github.svg" alt="Logo GitHub"></a></li>
+        <li><a href="#"><img src="../assets/img/svg/facebook.svg" alt="Logo Facebook"></a></li>
+        <li><a href="#"><img src="../assets/img/svg/instagram.svg" alt="Logo Instagram"></a></li>
+        <li><a href="#"><img src="../assets/img/svg/twitter.svg" alt="Logo Twitter"></a></li>
+        <li><a href="#"><img src="../assets/img/svg/github.svg" alt="Logo GitHub"></a></li>
     </ul>
 </footer>
     <!-- Bootstrap Bundle with Popper -->
