@@ -45,7 +45,7 @@
         </div>
     </nav>
     <!-- Breadcrumb -->
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">Accueil</li>
             <li class="breadcrumb-item active">Nos événements</li>
@@ -53,46 +53,67 @@
     </nav>
 </header>
 <main>
-    <section>
-        <h1>Nos événements</h1>
-        <p>Retrouvez-ici l'ensemble de nos événements et ateliers organisés !</p>
+    <section class="py-4 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1>Nos événements</h1>
+                <p>Retrouvez-ici l'ensemble de nos événements et ateliers organisés !</p>
+            </div>
+        </div>
     </section>
-    <article>
-        <img src="../assets/img/everyone_can_code.jpg" alt="Image atelier code">
-        <div>
-            <h3>Atelier <em>Everyone Can Code</em></h3>
-            <p>Rejoignez-nous tous les mardis pour cet atelier d'initiation au code
-                et venez developer vos compétences !</p>
-            <div>
-                <p>Mardi 8 février de 18h à 20h</p>
-                <a href="everyoneCanCode08022022.html"><button type="button">Voir plus</button></a>
+    <!-- Album of Events -->
+    <div class="album py-5 bg-body">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Card Event #1 -->
+                <div class="col">
+                    <article class="card shadow-sm">
+                        <img src="../assets/img/everyone_can_code.jpg" alt="Image atelier code" class="card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <h3 class="card-title">Atelier <em>Everyone Can Code</em></h3>
+                            <p class="card-text">Rejoignez-nous tous les mardis pour cet atelier d'initiation au code
+                                et venez developer vos compétences !</p>
+                            <div>
+                                <p class="card-subtitle mb-2 text-muted">Mardi 8 février de 18h à 20h</p>
+                                <a href="everyoneCanCode08022022.html" class="btn btn-dark">Voir plus</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card Event #2 -->
+                <div class="col">
+                    <article class="card shadow-sm">
+                        <img src="../assets/img/hackathon.jpg" alt="Image événement Hackathon" class="card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <h3 class="card-title">Hackathon</h3>
+                            <p class="card-text">Venez seuls ou en groupe afin de participer à ce premier Hackathon et
+                                épatez-nous grâce à vos plus beaux projets !</p>
+                            <div>
+                                <p class="card-subtitle mb-2 text-muted">Samedi 19 février de 14h à 20h</p>
+                                <a href="#" class="btn btn-dark">Voir plus</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <!-- Card Event #3 -->
+                <div class="col">
+                    <article class="card shadow-sm">
+                        <img src="../assets/img/arduino.jpg" alt="Image événement Arduino" class="card-img-top" width="100%" height="225">
+                        <div class="card-body">
+                            <h3 class="card-title">Initiation à Arduino</h3>
+                            <p class="card-text">Que vous soyez novice ou expérimenté, nous vous proposons de venir découvrir
+                                l'univers Arduino en concevant des objets connectés.</p>
+                            <div>
+                                <p class="card-subtitle mb-2 text-muted">Mercredi 2 mars de 18h à 20h</p>
+                                <a href="#" class="btn btn-dark">Voir plus</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
-    </article>
-    <article>
-        <img src="../assets/img/hackathon.jpg" alt="Image événement Hackathon">
-        <div>
-            <h3>Hackathon</h3>
-            <p>Venez seuls ou en groupe afin de participer à ce premier Hackathon et
-                épatez-nous grâce à vos plus beaux projets !</p>
-            <div>
-                <p>Samedi 19 février de 14h à 20h</p>
-                <a href="#"><button type="button">Voir plus</button></a>
-            </div>
-        </div>
-    </article>
-    <article>
-        <img src="../assets/img/arduino.jpg" alt="Image événement Arduino">
-        <div>
-            <h3>Initiation à Arduino</h3>
-            <p>Que vous soyez novice ou expérimenté, nous vous proposons de venir découvrir
-                l'univers Arduino et peut-être programmer votre premier objet interactif.</p>
-            <div>
-                <p>Mercredi 2 mars de 18h à 20h</p>
-                <a href="#"><button type="button">Voir plus</button></a>
-            </div>
-        </div>
-    </article>
+    </div>
+    <!-- END of Album -->
 </main>
 <!-- Footer -->
 <footer class="footer mt-auto py-3 bg-light">
