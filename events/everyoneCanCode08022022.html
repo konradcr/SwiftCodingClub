@@ -17,11 +17,11 @@
 <body>
 <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../assets/img/svg/swift_logo_color.svg" alt="Logo Swift" width="30" height="30"
-                     class="d-inline-block">
+                <img src="../assets/img/svg/swift_logo_color.svg" alt="Logo Swift" width="30" height="24"
+                     class="d-inline-block align-text-top">
                 Swift Coding Club de Bourgogne
             </a>
             <button class="navbar-toggler" type="button"
@@ -54,21 +54,36 @@
     </nav>
 </header>
 <main>
-    <article>
-        <h1>Atelier <em>Everyone Can Code</em>.</h1>
-        <img src="../assets/img/everyone_can_code.jpg" alt="Image atelier code">
-        <p>Comme tous les mardis, on se retrouve pour partager notre
-            passion pour le code, apprendre et surtout nous amuser ! Au cours
-            de cette séance, nous approfondirons les concepts de l'algo de manière
-            ludique. Si vous avez la moindre question, ou si vous souhaitez que l'on
-            approfondisse un point en particulier, n'hésitez pas à m'envoyer un email !
-            <br>Lucile
-            </p>
-        <h4>Quand ?</h4>
-        <p>Mardi 08 février de 18h à 20h</p>
-        <h4>Où ?</h4>
-        <p>Bibliothèque de Chalon sur Saône</p>
-        <button type="button">Je participe !</button>
+    <article class="bg-dark text-white">
+        <div class="position-relative row">
+            <img src="../assets/img/everyone_can_code.jpg" alt="Image atelier code" class="img-fluid">
+            <div class="text-center position-absolute top-50 start-50 translate-middle">
+                <h1>Atelier <em>Everyone Can Code</em>.</h1>
+                <button type="button" class="btn btn-dark">Je participe !</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 m-2">
+                <div class="col p-2">
+                    <h4 class="py-2">À propos de l'événement</h4>
+                    <p>Comme tous les mardis, on se retrouve pour partager notre
+                        passion pour le code, apprendre et surtout nous amuser ! Au cours
+                        de cette séance, nous approfondirons les concepts de l'algo de manière
+                        ludique. Si vous avez la moindre question, ou si vous souhaitez que l'on
+                        approfondisse un point en particulier, n'hésitez pas à m'envoyer un email !
+                        <br>Lucile</p>
+                </div>
+                <div class="col p-2">
+                    <h4 class="py-2">QUAND</h4>
+                    <p>Mardi 08 février de 18h à 20h</p>
+                </div>
+                <div class="col p-2">
+                    <h4 class="py-2">OÙ</h4>
+                    <p>Bibliothèque de Chalon sur Saône</p>
+                </div>
+
+            </div>
+        </div>
     </article>
 </main>
 <!-- Footer -->
