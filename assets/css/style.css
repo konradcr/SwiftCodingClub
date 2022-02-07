@@ -1,1 +1,36 @@
+/* -- NAVBAR // BREADCRUMB -- */
+.navbar-brandName {
+    font-size: 0.9rem; /* Reduce website name size to fit */
+}
 
+nav.breadcrumb {
+    padding-top: 80px; /* Add padding because of fixed navbar */
+    padding-left: 20px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: '›'; /* Change the breadcrumb divider */
+}
+
+/* -- BUTTON STYLE -- */
+.btn:hover {
+    background-color: #e05D43;
+    border-color: #e05D43;
+    color: white;
+}
+
+/* -- FOOTER -- */
+.bi {
+    font-size: 1.5rem; /* Increase social media icons size */
+    padding-inline: 5px;
+}
+
+@media screen and (min-width:768px){
+    .navbar-brandName {
+        font-size: 1rem; /* Increase website name size on desktop */
+    }
+    .btn-event {
+        font-size: 1.5rem; /* Increase the button size on the event detail page on desktop */
+        margin-top: 30px; /* Add margin around the button on the event detail page on desktop */
+    }
+}
